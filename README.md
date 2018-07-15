@@ -3,6 +3,9 @@
 A tock server in nodejs, using [Express 4](http://expressjs.com/), ready to
 be deployed on [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
 
+* Allow multiple games, and a replay mode
+* Name a player *Yoshi* to make it a computer opponent
+
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
