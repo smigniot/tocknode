@@ -1,0 +1,746 @@
+* {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(wood.png);
+}
+
+div.gamesroom {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    border: 1px solid black;
+}
+
+div.gamesroom div.title {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+}
+
+div.gamesroom div.games {
+    width: 320px;
+    height: 200px;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+div.gamesroom div.games table.games {
+    width: 100%;
+}
+
+div.gamesroom div.games table.games td {
+    font-size: 12px;
+}
+
+div.gamesroom div.games table.games td.creation {
+    width: 80px;
+}
+
+div.gamesroom div.actions {
+    border-top: 1px solid black;
+    background-color: white;
+}
+div.gamesroom div.actions button {
+    font-size: 12px;
+}
+
+div.gamesroom table.attributes {
+    border-top: 1px solid black;
+    background-color: white;
+    font-size: 12px;
+    width: 100%;
+}
+
+div.gamesroom table.attributes td input {
+    width: 100%;
+}
+
+div.gamesroom table.saved {
+    border-top: 1px solid black;
+    background-color: white;
+    font-size: 12px;
+    width: 100%;
+}
+
+div.gamesroom table.saved td input {
+    width: 100%;
+}
+
+
+table.game {
+    width: 100%;
+}
+
+table.game td.title {
+    vertical-align: top;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+table.game td.title img {
+    position: absolute;
+}
+
+div.board {
+    width:600px;
+    height:600px;
+    background:url(board.png);
+}
+div.cardMask {
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    left:553px;
+    top: 535px;
+    width:275px;
+    height:108px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+table.game td.gameinfo {
+    vertical-align: top;
+    width: 200px;
+}
+
+table.game td.gameinfo fieldset {
+    width: 200px;
+    height: 60px;
+    border-collapse: collapse;
+}
+table.game td.gameinfo fieldset legend.place {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+table.game td.gameinfo fieldset input {
+    width: 160px;
+}
+
+div.pawn_0 {
+	width:26px;
+	height:26px;
+	overflow:hidden;
+	position:absolute;
+	background:url(pawns.png);
+	background-position:-0px -0px;
+}
+div.pawn_1 {
+	width:26px;
+	height:26px;
+	overflow:hidden;
+	position:absolute;
+	background:url(pawns.png);
+	background-position:-26px -0px;
+}
+div.pawn_2 {
+	width:26px;
+	height:26px;
+	overflow:hidden;
+	position:absolute;
+	background:url(pawns.png);
+	background-position:-52px -0px;
+}
+div.pawn_3 {
+	width:26px;
+	height:26px;
+	overflow:hidden;
+	position:absolute;
+	background:url(pawns.png);
+	background-position:-78px -0px;
+}
+
+div.card_1_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-0px -0px;
+}
+div.card_1_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-0px -68px;
+}
+div.card_1_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-0px -136px;
+}
+div.card_1_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-0px -204px;
+}
+div.card_2_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-47px -0px;
+}
+div.card_2_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-47px -68px;
+}
+div.card_2_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-47px -136px;
+}
+div.card_2_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-47px -204px;
+}
+div.card_3_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-94px -0px;
+}
+div.card_3_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-94px -68px;
+}
+div.card_3_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-94px -136px;
+}
+div.card_3_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-94px -204px;
+}
+div.card_4_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-141px -0px;
+}
+div.card_4_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-141px -68px;
+}
+div.card_4_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-141px -136px;
+}
+div.card_4_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-141px -204px;
+}
+div.card_5_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-188px -0px;
+}
+div.card_5_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-188px -68px;
+}
+div.card_5_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-188px -136px;
+}
+div.card_5_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-188px -204px;
+}
+div.card_6_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-235px -0px;
+}
+div.card_6_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-235px -68px;
+}
+div.card_6_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-235px -136px;
+}
+div.card_6_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-235px -204px;
+}
+div.card_7_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-282px -0px;
+}
+div.card_7_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-282px -68px;
+}
+div.card_7_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-282px -136px;
+}
+div.card_7_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-282px -204px;
+}
+div.card_8_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-329px -0px;
+}
+div.card_8_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-329px -68px;
+}
+div.card_8_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-329px -136px;
+}
+div.card_8_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-329px -204px;
+}
+div.card_9_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-376px -0px;
+}
+div.card_9_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-376px -68px;
+}
+div.card_9_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-376px -136px;
+}
+div.card_9_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-376px -204px;
+}
+div.card_10_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-423px -0px;
+}
+div.card_10_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-423px -68px;
+}
+div.card_10_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-423px -136px;
+}
+div.card_10_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-423px -204px;
+}
+div.card_11_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-470px -0px;
+}
+div.card_11_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-470px -68px;
+}
+div.card_11_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-470px -136px;
+}
+div.card_11_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-470px -204px;
+}
+div.card_12_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-517px -0px;
+}
+div.card_12_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-517px -68px;
+}
+div.card_12_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-517px -136px;
+}
+div.card_12_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-517px -204px;
+}
+div.card_13_0 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-564px -0px;
+}
+div.card_13_1 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-564px -68px;
+}
+div.card_13_2 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-564px -136px;
+}
+div.card_13_3 {
+	width:47px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	background:url(cards.png);
+	background-position:-564px -204px;
+}
+
+button.rejoin {
+	width: 20px;
+	height: 20px;
+	background:url(me.png);
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+}
+
+div.chooser {
+	width: 200px;
+	border: 1px solid gray;
+	position: absolute;
+	font-size: 10px;
+}
+
+div.chooser button {
+	width: 100%;
+}
+
+div.chatlog {
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    border: 1px dotted gray;
+}
+
+input.chat {
+    width: 25%;
+    left: 25%;
+    top: 33%;
+    position:absolute;
+}
+
+input.current {
+    background-color: black;
+    color: white;
+}
+
+div.cardback_0 {
+    width:0px;
+    height:26px;
+    overflow:hidden;
+    position:absolute;
+    background:url(cardback.png);
+}
+
+div.cardback_1 {
+    width:19px;
+    height:26px;
+    overflow:hidden;
+    position:absolute;
+    background:url(cardback.png);
+}
+
+div.cardback_2 {
+    width:38px;
+    height:26px;
+    overflow:hidden;
+    position:absolute;
+    background:url(cardback.png);
+}
+
+div.cardback_3 {
+    width:57px;
+    height:26px;
+    overflow:hidden;
+    position:absolute;
+    background:url(cardback.png);
+}
+
+div.cardback_4 {
+    width:76px;
+    height:26px;
+    overflow:hidden;
+    position:absolute;
+    background:url(cardback.png);
+}
+
+div.cardback_5 {
+    width:95px;
+    height:26px;
+    overflow:hidden;
+    position:absolute;
+    background:url(cardback.png);
+}
+
+div.cardback_given {
+    width:19px;
+    height:26px;
+    overflow:hidden;
+    position:absolute;
+    background:url(cardback.png);
+    background-position:-95px -0px;
+}
+
+div.prefdialog {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    z-index: 2;
+}
+
+div.prefdialog div.preftitle {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+div.prefdialog .pad {
+    margin-top: 15px;
+}
+div.prefdialog label {
+    margin-left: 20px;
+    float: left;
+    width: 200px;
+    font-size: 12px;
+}
+
+div.dealer {
+    width:16px;
+    height:16px;
+    background:url(play.png);
+    position: absolute;
+}
+
+td.presence {
+    width: 80px;
+}
+
+div.presence0 {
+    width:16px;
+    height:16px;
+    background:url(presence.png);
+    background-position:-0px -0px;
+    float: right;
+}
+
+div.presence1 {
+    width:16px;
+    height:16px;
+    background:url(presence.png);
+    background-position:-16px -0px;
+    float: right;
+}
+
+div.presence2 {
+    width:16px;
+    height:16px;
+    background:url(presence.png);
+    background-position:-32px -0px;
+    float: right;
+}
+
+div.presence3 {
+    width:16px;
+    height:16px;
+    background:url(presence.png);
+    background-position:-48px -0px;
+    float: right;
+}
+

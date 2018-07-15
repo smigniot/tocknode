@@ -1,0 +1,6 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Tock;;;;
+FN:Tock
+URL:http://www.migniot.com/Tock.html
+END:VCARD

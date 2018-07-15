@@ -1,0 +1,48 @@
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="tock.css" />
+  <script type='text/javascript' src='json2.js'></script>
+  <script type='text/javascript' src='shared.js'></script>
+  <script type='text/javascript' src='client.js'></script>
+ </head>
+ <body onload='syncGames()'>
+  <div class='gamesroom'>
+   <div class='title'>
+    Parties
+   </div>
+   <div class='games'><table class='games'>
+    <tbody id='games'/>
+   </table></div>
+   <div class='actions'>
+    <button onclick='createGame()'>Nouvelle partie</button>
+    <button onclick='restoreGame()'>Restauration</button>
+   </div>
+   <table id='attributes' class='attributes' style='display:none'>
+    <tr>
+     <th align='left'>Titre</th>
+     <td><input type='text' id='gamename'/></td>
+    </tr>
+    <tr>
+     <th align='left'>Proposée par</th>
+     <td><input type='text' id='by'/></td>
+    </tr>
+    <tr><td colspan='2' align='right'>
+     <button onclick='finishCreateGame()'>Créer</button>
+    </td></tr>
+   </table>
+   <table id='saved' class='saved' style='display:none'>
+    <tr>
+     <th align='left'>Partie</th>
+     <td><select id='restorable'></select></td>
+    </tr>
+    <tr>
+     <th align='left'>Titre</th>
+     <td><input type='text' id='restoredname' disabled='disabled' /></td>
+    </tr>
+    <tr><td colspan='2' align='right'>
+     <button onclick='finishRestoreGame()'>Restaurer</button>
+    </td></tr>
+   </table>
+  </div>
+ </body>
+</html>

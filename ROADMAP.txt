@@ -1,0 +1,32 @@
+[X] 01. Gestion de configuration
+[X] 02. Scripts automatisés
+[X] 03. Sécuriser le crash serveur
+[X] 04. Echange depuis ou vers un parking devrait etre impossible
+[X] 05. Recul depuis un parking partenaire devrait etre impossible
+[X] 06. La porte devrait accepter le roi et l'as
+[X] 07. Partie "<titre>" proposée par "<internaute>" à "<heure>" en infobulle
+[X] 08. Fenetre de chat unique
+[X] 09. Changer le donneur
+[X] 10. Liseré sur les cases 8
+[X] 11. Signifier explicitement au joueur son tour
+[X] 12. Animer les mouvements, échanges et donnes
+[X] 13. Icone carte tournée sur échange
+[X] 14. Icone carte tournée à coté de l'utilisateur
+[X] 15. Animation sur partie gagnée puis jeu bloqué
+[X] 16. Sauvegarder les parties sur le serveur
+[X] 17. Polling différentiel
+[X] 18. Effacement des flèches sur coup
+[X] 19. Tableau de préférences
+[X] 20. Changer de joueur automatiquement
+[X] 21. Cacher les cartes sur changement
+[X] 22. Documentation du code
+[X] 23. Icone de donneur
+[X] 24. Sécuriser le serveur
+[X] 25. Intelligence artificielle
+[X] 26. Indicateurs de présence
+[ ] 27. Mode tournoi
+[ ] 28. Taille des cartes
+[ ] 29. Drag and drop pour les mouvements
+[ ] 30. Touche annulation du coup 
+[ ] 31. Diaporama de partie terminée
+[ ] 32. Carte blanche et joker en 5-5-4

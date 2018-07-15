@@ -1,0 +1,77 @@
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="../tock.css" />
+  <script type='text/javascript' src='../json2.js'></script>
+  <script type='text/javascript' src='../jsgraphics.js'></script>
+  <script type='text/javascript' src='../shared.js'></script>
+  <script type='text/javascript' src='../client.js'></script>
+  <script type='text/javascript' src='../robots.js'></script>
+ </head>
+ <body onload='startSyncGame()'>
+  <table class='game'><tbody>
+   <tr><td class='title' colspan='2'>
+    <span id='title'>&nbsp;</span>
+    <img id='save' src='../save.png' style="right:2px;"/>
+    <img id='preferences' src='../preferences.png' style="right:20px;"/>
+    <a style='position: absolute; right: 100px' href='http://www.migniot.com/reglestock.txt' target='_blank'>Aide</a>
+   </td></tr>
+   <tr>
+    <td class='gameinfo'>
+     <fieldset id='player0'>
+      <legend class='place'>Vert</legend>
+      <input type='text' id='playername0' 
+	  title="Votre nom ou Yoshi pour jouer contre l'ordinateur"/>
+      <button id='rejoin0' class='rejoin'></button>
+     </fieldset>
+     <fieldset id='player1'>
+      <legend class='place'>Jaune</legend>
+      <input type='text' id='playername1'
+	  title="Votre nom ou Yoshi pour jouer contre l'ordinateur"/>
+      <button id='rejoin1' class='rejoin'></button>
+     </fieldset>
+     <fieldset id='player2'>
+      <legend class='place'>Rouge</legend>
+      <input type='text' id='playername2'
+	  title="Votre nom ou Yoshi pour jouer contre l'ordinateur"/>
+      <button id='rejoin2' class='rejoin'></button>
+     </fieldset>
+     <fieldset id='player3'>
+      <legend class='place'>Bleu</legend>
+      <input type='text' id='playername3'
+	  title="Votre nom ou Yoshi pour jouer contre l'ordinateur"/>
+      <button id='rejoin3' class='rejoin'></button>
+     </fieldset>
+     <div class='chatlog' id='chat'></div>
+    </td>
+    <td valign='top'>
+     <div class='board' id='board' />
+     <div id='stack' style='display:none'/>
+    </td>
+   </tr>
+  </tbody></table>
+  <div id='cardMask' class='cardMask' valign='middle' style='visibility:hidden'>
+    Changer de joueur puis cliquer pour révéler les cartes
+  </div>
+  <div id='prefdialog' class='prefdialog' style='display:none'>
+   <div class='preftitle'>Affichage :</div>
+   <label>Animations des pions</label>
+   <input type='checkbox' id='pawnsSlideAnimation' />
+   <br />
+   <div class='preftitle pad'>Changement de joueur :</div>
+   <label>Changer automatiquement</label>
+   <input type='checkbox' id='cyclePlayers' />
+   <br />
+   <label>Cacher les cartes</label>
+   <input type='checkbox' id='hideHandOnCycle' />
+   <br />
+   <div class='preftitle pad'>Mode de jeu :</div>
+   <label>Tournoi</label>
+   <input type='checkbox' id='tournamentMode' disabled='disabled' />
+   <br />
+   <label>Yoshi</label>
+   <input type='checkbox' id='yoshiSays' />
+   <br />
+   <button id='prefDialogSave' class="pad">Sauvegarder</button>
+  </div>
+ </body>
+</html>
