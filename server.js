@@ -593,7 +593,7 @@ TockServer.prototype.saveGame = function(_gamename) {
     parentdir = path.join(process.cwd(), 'games');
     try { fs.mkdirSync(parentdir); } catch(err) {}
     filename = path.join(parentdir, basename);
-    fs.writeFile(filename, JSON.stringify(game));
+    fs.writeFileSync(filename, JSON.stringify(game));
     util.log("Game saved "+filename);
     return basename;
 };
