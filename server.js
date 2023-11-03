@@ -95,6 +95,7 @@ TockServer.prototype.setLog = function(logfile) {
  */
 TockServer.prototype.serveStatic = function(filename, response) {
     fs.readFile(filename, function(error, content) {
+        try {
             if (error) {
             response.writeHead(500);
             response.end();
@@ -120,6 +121,11 @@ TockServer.prototype.serveStatic = function(filename, response) {
             response.writeHead(200, {'Content-Type':'text/plain; charset=utf-8'});
             response.end(content);
             }
+        } catch(e) {
+            util.log("Serving file = ["+filename
+                    +"] caused server error = ["+e
+                    +"]");
+        }
     });
 }
 
@@ -481,8 +487,6 @@ TockServer.prototype.doServeRequest = function(request, response) {
 	});
     } else if(uri.match(/^\/watch\/(.*)$/)) {
         this.serveStatic('game.html', response);
-        response.writeHead(200, {'Content-Type':
-                'application/json; charset=utf-8'});
     } else if(uri.match(/^\/state\/(.*)$/)) {
         response.writeHead(200, {'Content-Type':
                 'application/json; charset=utf-8'});
