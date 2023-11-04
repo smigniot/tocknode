@@ -17,9 +17,9 @@ $ npm start
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying
+## Running on docker
 
 ```
-$ docker run smigniot/tocknode:v1.0.1
+$ docker run -p 127.0.0.1:5000:5000/tcp smigniot/tocknode:v1.0.1
 ```
 
