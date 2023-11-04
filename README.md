@@ -1,7 +1,6 @@
 # Tock server
 
-A tock server in nodejs, using [Express 4](http://expressjs.com/), ready to
-be deployed on [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
+A tock server in nodejs, using [Express 4](http://expressjs.com/).
 
 * Allow multiple games, and a replay mode
 * Name a player *Yoshi* to make it a computer opponent
@@ -18,14 +17,9 @@ $ npm start
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
+## Deploying
 
 ```
-$ heroku create
-$ git push heroku master
-$ heroku open
+$ docker run smigniot/tocknode:v1.0.1
 ```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
